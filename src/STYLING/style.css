@@ -1,5 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,,600,700';
 body {
     background-color: #6abfe8a1;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wholeWeather {
@@ -70,13 +72,13 @@ hr {
 .countriesList {
     position: relative;
     left: 1em;
-    top: 4em;
+    top: 8em;
 }
 
 .weatherListDetails {
     position: relative;
     left: 1em;
-    top: 8em;
+    top: 13em;
 }
 
 .countriesList li {
