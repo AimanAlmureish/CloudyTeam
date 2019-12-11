@@ -22,10 +22,7 @@ const Weather = props => {
             <div className="col-fl-md-8">
               <div className="singleWeatherImg">
                 <div className="image">
-                  <img
-                    src="https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?cs=srgb&dl=photo-of-multi-coloured-hot-air-balloons-3027216.jpg&fm=jpg"
-                    alt=""
-                  />
+                  <img src="" alt="" />
                 </div>
                 <div className="text">
                   <span className="degree t-weight-900">
@@ -54,7 +51,7 @@ const Weather = props => {
                   <h4>Weather Deatails</h4>
                   <hr />
 
-                  <div className="col-fl-md-6">
+                  <div className="col-fl-md-7">
                     <ul>
                       <li>humidity</li>
                       <li>Pressure</li>
@@ -62,7 +59,7 @@ const Weather = props => {
                       <li>Cloud</li>
                     </ul>
                   </div>
-                  <div className="col-fl-md-6">
+                  <div className="col-fl-md-3">
                     <ul>
                       <li>{humidity}</li>
                       <li>{pressure}</li>
