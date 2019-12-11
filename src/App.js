@@ -21,16 +21,20 @@ export class App extends Component {
   
   getdata=(name)=>{
     let data ={} ;
-    fetch(`http://api.weatherstack.com/current?access_key=35381ddac74e2dbd44ec915bb3e139bb&query=${name}`).then(res=>res.json()).then(res=>this.setState({data:res}));
+    fetch(`http://api.weatherstack.com/current?access_key=c2b96cca3030c567906cf2d51c8d5697&query=${name}`).then(res=>res.json()).then(res=>this.setState({data:res}));
    
     return data;
   }
   componentDidMount(){
     this.getdata(this.state.name)
   }
-  componentWillUpdate(){
-    this.getdata(this.state.name)
+  componentWillUnmount = () => {
+    this.setState({data:null})
   }
+  
+  // comm(){
+  //   this.getdata(this.state.name)
+  // }
   render() {
     let finalData = {}
    if (this.state.data !== null){
