@@ -1,0 +1,63 @@
+body {
+    background-color: aqua;
+}
+
+.wholeWeather {
+    border-style: solid;
+    margin: 4em;
+    position: relative;
+    z-index: -1;
+    display: table;
+    margin: 0;
+    max-width: none;
+    width: 100%;
+}
+
+.singleWeather {
+    border-style: solid;
+    height: 73vh;
+    width: 100%;
+}
+
+.image {
+    height: 56vh;
+}
+
+.text {
+    color: azure;
+    position: absolute;
+    bottom: 4em;
+    left: 6em;
+}
+
+.singleWeatherImg {
+    border-style: solid;
+    /* background-image: url(""); */
+    width: 100%;
+    height: 73vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleWeatherImg img {
+    width: 100%;
+    height: 73vh;
+}
+
+.search {}
+
+.search form {}
+
+.search form input {}
+
+.countriesList {}
+
+.weatherListDetails {
+    position: relative;
+    left: 3em;
+    top: 8em;
+}
+
+.countriesList li {}
+
+.weatherListDetails li {}
