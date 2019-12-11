@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Weather from './Weather';
 
 export class App extends Component {
   constructor(props) {
@@ -6,26 +7,30 @@ export class App extends Component {
     
     this.state = {
       name:"Sanaa",
-      data:{}
+      data:null
     }
   }
   
   getdata=(name)=>{
     let data ={} ;
-    fetch(`http://api.weatherstack.com/current?access_key=35381ddac74e2dbd44ec915bb3e139bb&query=${name}`).then(res=>res.json()).then(res=>console.log(res));
-   this.setState({data})
+    fetch(`http://api.weatherstack.com/current?access_key=35381ddac74e2dbd44ec915bb3e139bb&query=${name}`).then(res=>res.json()).then(res=>this.setState({data:res}));
+   
     return data;
   }
   componentDidMount(){
     this.getdata('sanaa')
   }
   render() {
-  
-  /* console.log(this.state.data);   */
+    let finalData = {}
+   if (this.state.data !== null){
+     finalData = {temperature: this.state.data.current.temperature ,time:this.state.data.location.localtime, city:this.state.data.location.name, desc:this.state.data.current.weather_descriptions,cloud: this.state.data.current.cloudcover,pressure: this.state.data.current.pressure,humidity:this.state.data.current.humidity,wind:this.state.data.current.wind_speed}
+   } 
+console.log(this.state.data);
+ 
 
     return (
       <div>
-      
+ <Weather data={finalData} /> 
       </div>
       )
     }
