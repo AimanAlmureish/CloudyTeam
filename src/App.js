@@ -13,6 +13,11 @@ export class App extends Component {
       data:null
     }
   }
+  handelChange=(e)=>{
+   let a= e.target.innerText;
+    this.setState({name: a})
+    console.log(a , "Clicked");
+  }
   
   getdata=(name)=>{
     let data ={} ;
@@ -33,7 +38,7 @@ console.log(this.state.data);
 
     return (
       <div>
- <Weather data={finalData} /> 
+ <Weather data={finalData} onClick={this.handelChange} /> 
       </div>
       )
     }

@@ -28,10 +28,10 @@ const Weather = (props) => {
                             </div>
                             <div className="countriesList">
                                 <ul>
-                                    <li>country</li>
-                                    <li>country</li>
-                                    <li>country</li>
-                                    <li>country</li>
+                                    <li onClick={props.onClick}>Sanaa</li>
+                                    <li onClick={props.onClick}>Taiz</li>
+                                    <li onClick={props.onClick}>London</li>
+                                    <li onClick={props.onClick}>Madrid</li>
                                 </ul>
                             </div>
                             <div className="weatherListDetails">
