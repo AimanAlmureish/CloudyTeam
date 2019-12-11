@@ -1,9 +1,9 @@
 body {
-    background-color: aqua;
+    background-color: #6abfe8a1;
 }
 
 .wholeWeather {
-    border-style: solid;
+    border-style: none;
     margin: 4em;
     position: relative;
     z-index: -1;
@@ -11,12 +11,22 @@ body {
     margin: 0;
     max-width: none;
     width: 100%;
+    box-shadow: 0 0px 26px 0 gray;
+    background-color: #9ed8f4;
+}
+
+.pre {
+    z-index: -1;
+    position: relative;
 }
 
 .singleWeather {
-    border-style: solid;
-    height: 73vh;
+    border-style: none;
+    height: 82vh;
     width: 100%;
+    background-color: #399bca;
+    position: relative;
+    right: 1em;
 }
 
 .image {
@@ -31,17 +41,24 @@ body {
 }
 
 .singleWeatherImg {
-    border-style: solid;
+    border-style: none;
     /* background-image: url(""); */
     width: 100%;
-    height: 73vh;
+    height: 82vh;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    left: 1em;
 }
 
 .singleWeatherImg img {
     width: 100%;
-    height: 73vh;
+    height: 82vh;
+}
+
+hr {
+    width: 71%;
+    border-color: black;
 }
 
 .search {}
@@ -50,14 +67,22 @@ body {
 
 .search form input {}
 
-.countriesList {}
+.countriesList {
+    position: relative;
+    left: 1em;
+    top: 4em;
+}
 
 .weatherListDetails {
     position: relative;
-    left: 3em;
+    left: 1em;
     top: 8em;
 }
 
-.countriesList li {}
+.countriesList li {
+    list-style: none;
+}
 
-.weatherListDetails li {}
+.weatherListDetails li {
+    list-style: none;
+}

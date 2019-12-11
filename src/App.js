@@ -16,7 +16,7 @@ export class App extends Component {
   handelChange=(e)=>{
    let a= e.target.innerText;
     this.setState({name: a})
-    console.log(a , "Clicked");
+    console.log(this.state.name , "Clicked");
   }
   
   getdata=(name)=>{
@@ -26,7 +26,10 @@ export class App extends Component {
     return data;
   }
   componentDidMount(){
-    this.getdata('sanaa')
+    this.getdata(this.state.name)
+  }
+  componentWillUpdate(){
+    this.getdata(this.state.name)
   }
   render() {
     let finalData = {}
