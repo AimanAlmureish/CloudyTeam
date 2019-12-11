@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Weather from './Weather';
+import './STYLING/kvass.css'
+import './STYLING/style.css'
+
 
 export class App extends Component {
   constructor(props) {
