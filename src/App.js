@@ -12,14 +12,16 @@ export class App extends Component {
   
   getdata=(name)=>{
     let data ={} ;
-    fetch(`http://api.weatherstack.com/current?access_key=35381ddac74e2dbd44ec915bb3e139bb&query=${name}`).then(res=>res.json()).then(res=>data=res);
+    fetch(`http://api.weatherstack.com/current?access_key=35381ddac74e2dbd44ec915bb3e139bb&query=${name}`).then(res=>res.json()).then(res=>console.log(res));
    this.setState({data})
     return data;
   }
-  
+  componentDidMount(){
+    this.getdata('sanaa')
+  }
   render() {
-  this.getdata('sanaa')
-  console.log(this.state.data);  
+  
+  /* console.log(this.state.data);   */
 
     return (
       <div>
