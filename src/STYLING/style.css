@@ -72,13 +72,13 @@ hr {
 .countriesList {
     position: relative;
     left: 1em;
-    top: 4em;
+    top: 8em;
 }
 
 .weatherListDetails {
     position: relative;
     left: 1em;
-    top: 8em;
+    top: 13em;
 }
 
 .countriesList li {
