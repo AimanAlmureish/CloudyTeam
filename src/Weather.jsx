@@ -12,23 +12,28 @@ const Weather = props => {
     wind,
     pressure
   } = props.data;
+  console.log(props.data);
+  console.log(wind);
   return (
-    <main>
-      <div className="wrapper">
+    <main className="pre">
+      <div className="wrapper pre">
         <div className="col-fl-md-12 pre">
-          <div className="wholeWeather">
+          <div className="wholeWeather pre">
             <div className="col-fl-md-8">
               <div className="singleWeatherImg">
                 <div className="image">
                   <img
-                    src="https://www.dreamcatcherhdri.com/219-licence/ref001-dusk-veiled.jpg"
+                    src="https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?cs=srgb&dl=photo-of-multi-coloured-hot-air-balloons-3027216.jpg&fm=jpg"
                     alt=""
                   />
                 </div>
                 <div className="text">
-                  <h1>
-                    {temperature} {city} <br /> {time +" "+ desc}
-                  </h1>
+                  <span className="degree t-weight-900">
+                    {temperature}&#176;{" "}
+                  </span>
+                  <span className="city t-weight-300">
+                    {city} <br /> <span className="t-weight-100">{time}</span>
+                  </span>
                 </div>
               </div>
             </div>

@@ -1,7 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,,600,700';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,,600,700');
 body {
-    background-color: #6abfe8a1;
+    background: linear-gradient(#b3d3e5, #3994cf);
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
 }
 
 .wholeWeather {
@@ -13,8 +16,7 @@ body {
     margin: 0;
     max-width: none;
     width: 100%;
-    box-shadow: 0 0px 26px 0 gray;
-    background-color: #9ed8f4;
+    /* background-color: #9ed8f4; */
 }
 
 .pre {
@@ -26,9 +28,10 @@ body {
     border-style: none;
     height: 82vh;
     width: 100%;
-    background-color: #399bca;
+    background: linear-gradient( #376487, #718691);
     position: relative;
     right: 1em;
+    box-shadow: 13px 6px 27px -9px #848282;
 }
 
 .image {
@@ -51,6 +54,7 @@ body {
     background-size: cover;
     position: relative;
     left: 1em;
+    box-shadow: 15px -5px 20px -7px #848282;
 }
 
 .singleWeatherImg img {
@@ -87,4 +91,19 @@ hr {
 
 .weatherListDetails li {
     list-style: none;
+}
+
+.degree {
+    font-size: 72px;
+}
+
+.city {
+    font-size: 45px;
+}
+
+.city>span {
+    font-size: 15px;
+    position: relative;
+    right: -134px;
+    top: -36px;
 }
