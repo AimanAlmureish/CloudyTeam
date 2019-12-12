@@ -1,122 +1,135 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,,600,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,,600,700");
 body {
-    background: linear-gradient(#b3d3e5, #3994cf);
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    z-index: -1;
-    position: relative;
+  background: linear-gradient(#b3d3e5, #3994cf);
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  z-index: -1;
+  position: relative;
 }
 
 .wholeWeather {
-    border-style: none;
-    margin: 4em;
-    position: relative;
-    z-index: -1;
-    display: table;
-    margin: 0;
-    max-width: none;
-    width: 100%;
-    /* background-color: #9ed8f4; */
+  border-style: none;
+  margin: 4em;
+  position: relative;
+  z-index: -1;
+  display: table;
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  /* background-color: #9ed8f4; */
 }
 
 .pre {
-    z-index: -1;
-    position: relative;
+  z-index: -1;
+  position: relative;
 }
 
 .singleWeather {
-    border-style: none;
-    height: 82vh;
-    width: 100%;
-    background: linear-gradient( #376487, #718691);
-    position: relative;
-    right: 1em;
-    color: #abafb3;
-    box-shadow: 13px 6px 27px -9px #848282;
+  border-style: none;
+  height: 82vh;
+  width: 100%;
+  background: linear-gradient(#376487, #718691);
+  position: relative;
+  right: 1em;
+  color: #abafb3;
+  box-shadow: 13px 6px 27px -9px #848282;
 }
 
 .image {
-    height: 56vh;
+  height: 56vh;
 }
 
 .text {
-    color: azure;
-    position: absolute;
-    bottom: 4em;
-    left: 6em;
+  color: azure;
+  position: absolute;
+  bottom: 4em;
+  left: 6em;
 }
 
 .singleWeatherImg {
-    border-style: none;
-    background-image: url("https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?cs=srgb&dl=photo-of-multi-coloured-hot-air-balloons-3027216.jpg&fm=jpg");
-    width: 100%;
-    height: 82vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    left: 1em;
-    box-shadow: 15px -5px 20px -7px #848282;
+  border-style: none;
+  background-image: url("https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?cs=srgb&dl=photo-of-multi-coloured-hot-air-balloons-3027216.jpg&fm=jpg");
+  width: 100%;
+  height: 82vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 1em;
+  box-shadow: 15px -5px 20px -7px #848282;
 }
 
 .singleWeatherImg img {
-    width: 100%;
-    height: 82vh;
+  width: 100%;
+  height: 82vh;
 }
 
 hr {
-    width: 71%;
-    border-color: #d2cbcb4a;
+  width: 71%;
+  border-color: #d2cbcb4a;
 }
 
-.search {}
+.search {
+}
 
-.search form {}
+.search form {
+}
 
-.search form input {}
+.search form input {
+}
 
 .countriesList {
-    position: relative;
-    left: 1em;
-    top: 8em;
+  position: relative;
+  left: 1em;
+  top: 8em;
 }
 
 .weatherListDetails {
-    position: relative;
-    left: 1em;
-    top: 13em;
+  position: relative;
+  left: 1em;
+  top: 13em;
 }
 
 .countriesList li {
-    list-style: none;
-    padding-bottom: 10px;
+  list-style: none;
+  padding-bottom: 10px;
 }
 
 .weatherListDetails li {
-    list-style: none;
-    padding-bottom: 10px;
+  list-style: none;
+  padding-bottom: 10px;
 }
 
 .countriesList li:nth-child(1) {
-    list-style: none;
-    padding-top: 10px;
+  list-style: none;
+  padding-top: 10px;
 }
 
 .weatherListDetails li:nth-child(1) {
-    list-style: none;
-    padding-top: 10px;
+  list-style: none;
+  padding-top: 10px;
 }
 
 .degree {
-    font-size: 72px;
+  font-size: 72px;
 }
 
 .city {
-    font-size: 45px;
+  font-size: 45px;
 }
 
-.city>span {
-    font-size: 15px;
-    position: relative;
-    right: -134px;
-    top: -36px;
+.city > span {
+  font-size: 15px;
+  position: relative;
+  right: -134px;
+  top: -36px;
+}
+
+.text span img {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  right: -10em;
+  top: -3em;
+  border-style: hidden;
+  border-radius: 16px;
 }

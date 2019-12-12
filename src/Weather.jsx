@@ -10,7 +10,8 @@ const Weather = props => {
     cloud,
     humidity,
     wind,
-    pressure
+    pressure,
+    weather_icons
   } = props.data;
   console.log(props.data);
   console.log(wind);
@@ -30,6 +31,9 @@ const Weather = props => {
                   </span>
                   <span className="city t-weight-300">
                     {city} <br /> <span className="t-weight-100">{time}</span>
+                  </span>
+                  <span>
+                    <img src={weather_icons} alt="icon" />
                   </span>
                 </div>
               </div>

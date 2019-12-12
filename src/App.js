@@ -29,7 +29,8 @@ const App = () => {
     cloud: data.current.cloudcover,
     pressure: data.current.pressure,
     humidity: data.current.humidity,
-    wind: data.current.wind_speed
+    wind: data.current.wind_speed,
+    weather_icons: data.current.weather_icons
   };
   return (
     <div>
