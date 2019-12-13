@@ -12,7 +12,7 @@ const App = () => {
   };
   const fetchData = async name => {
     const response = await fetch(
-      `https://api.weatherstack.com/current?access_key=0fd8ae9d5247af3922b8324c7aeac035&query=${name}`
+      `http://api.weatherstack.com/current?access_key=0fd8ae9d5247af3922b8324c7aeac035&query=${name}`
     );
     setData(await response.json());
   };
