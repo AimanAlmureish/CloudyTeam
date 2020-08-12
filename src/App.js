@@ -6,11 +6,11 @@ import "./STYLING/style.css";
 const App = () => {
   const [name, setName] = useState("Sanaa");
   const [data, setData] = useState(null);
-  const handelChange = e => {
+  const handelChange = (e) => {
     setName(e.target.innerText);
     console.log(name);
   };
-  const fetchData = async name => {
+  const fetchData = async (name) => {
     const response = await fetch(
       `http://api.weatherstack.com/current?access_key=0fd8ae9d5247af3922b8324c7aeac035&query=${name}`
     );
@@ -20,7 +20,7 @@ const App = () => {
     fetchData(name);
   }, [name]);
 
-  if (!data) return <h1>Loading ...</h1>;
+  if (!data) return <h1 className="loading">Loading ...</h1>;
   const finalData = {
     temperature: data.current.temperature,
     time: data.location.localtime,
@@ -30,7 +30,7 @@ const App = () => {
     pressure: data.current.pressure,
     humidity: data.current.humidity,
     wind: data.current.wind_speed,
-    weather_icons: data.current.weather_icons
+    weather_icons: data.current.weather_icons,
   };
   return (
     <div>

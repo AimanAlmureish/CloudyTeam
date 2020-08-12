@@ -1,6 +1,6 @@
 import React from "react";
 
-const Weather = props => {
+const Weather = (props) => {
   console.log(props);
   const {
     temperature,
@@ -11,7 +11,7 @@ const Weather = props => {
     humidity,
     wind,
     pressure,
-    weather_icons
+    weather_icons,
   } = props.data;
   console.log(props.data);
   console.log(wind);
@@ -57,18 +57,16 @@ const Weather = props => {
 
                   <div className="col-fl-md-7">
                     <ul>
-                      <li>humidity</li>
+                      <li>Humidity</li>
                       <li>Pressure</li>
                       <li>Wind</li>
-                      <li>Cloud</li>
                     </ul>
                   </div>
                   <div className="col-fl-md-3">
                     <ul>
-                      <li>{humidity}</li>
-                      <li>{pressure}</li>
-                      <li>{wind}</li>
-                      <li>{cloud}</li>
+                      <li>{humidity} %</li>
+                      <li>{pressure} mb</li>
+                      <li>{wind} kmph</li>
                     </ul>
                   </div>
                 </div>
