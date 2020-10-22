@@ -22,9 +22,7 @@ const Weather = (props) => {
           <div className="wholeWeather pre">
             <div className="col-fl-md-8">
               <div className="singleWeatherImg">
-                <div className="image">
-                  <img src="" alt="" />
-                </div>
+                <div className="image">{/* <img src="" alt="" /> */}</div>
                 <div className="text">
                   <span className="degree t-weight-900">
                     {temperature}&#176;{" "}
